@@ -4,6 +4,25 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.track-btn{
+    background-color:wheat;
+    text-align: center;
+    font-size:small;
+    animation: alternate-reverse;
+    #addRozasBtn {
+        padding: 12px 25px;
+        font-size:small;
+        background-color: black;
+        color:antiquewhite;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    #addRozasBtn:hover {
+    background-color: whitesmoke; 
+    color: black; 
+}
+}
+
 .header{
     background-image: url("rama.png"); /* put your image name here */
     color: antiquewhite;
