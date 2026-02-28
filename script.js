@@ -241,3 +241,24 @@ function markDone(day) {
     btn.textContent = 'Completed ✅';
     btn.disabled = true;
 }
+let totalRozas = 30;
+
+// Load completedRozas from localStorage
+let completedRozas = localStorage.getItem("completedRozas");
+completedRozas = completedRozas ? parseInt(completedRozas) : 0;
+
+// Show current progress
+document.getElementById("totalRozas").innerText = 
+    `Rozas completed: ${completedRozas} / ${totalRozas}`;
+
+// Button click adds 1 to completedRozas
+document.getElementById("addRozasBtn").onclick = function() {
+    if(completedRozas < totalRozas){
+        completedRozas++;
+        localStorage.setItem("completedRozas", completedRozas);
+        document.getElementById("totalRozas").innerText = 
+            `Rozas completed: ${completedRozas} / ${totalRozas}`;
+    } else {
+        alert("🎉 All Rozas completed for this Ramadan!");
+    }
+}
