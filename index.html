@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Check and Balance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+    <h1>Ramadan Check</h1>
+    <p>Stay Healthy and happy in Ramadan by keeping chech on yourself...........</p>
+    </div>
+<table>
+    <table border="5">
+        <th>Days</th>
+        <th>Date</th>
+        <th>Kept Roza</th>
+        <th>Oferr Prayes (How many?)</th>
+        <th>Finished Sparas</th>
+        <th>Iftar Notes</th>
+        <th>Motivation</th>
+<tr>
+    <td>o1</td>
+    <td>19-feb-26</td>
+    <td><input type="checkbox" id="day1_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day1_fajar">
+        Zohar<input type="checkbox" id="day1_zohar">
+        Asr<input type="checkbox" id="day1_asr">
+        Maghrib<input type="checkbox" id="day1_maghrib">
+        Isha<input type="checkbox" id="day1_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day1_sparas" id="day1_sparas1">
+        02<input type="radio" name="day1_sparas" id="day1_sparas2">
+        03<input type="radio" name="day1_sparas" id="day1_sparas3">
+    </td>
+    <td><input type="text" id="day1_notes"></td>
+    <td><button id="day1" onclick="markDone(1)">Done</button></td>
+</tr>
+<tr>
+    <td>o2</td>
+    <td>20-feb-26</td>
+    <td><input type="checkbox" id="day2_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day2_fajar">
+        Zohar<input type="checkbox" id="day2_zohar">
+        Asr<input type="checkbox" id="day2_asr">
+        Maghrib<input type="checkbox" id="day2_maghrib">
+        Isha<input type="checkbox" id="day2_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day2_sparas" id="day2_sparas1">
+        02<input type="radio" name="day2_sparas" id="day2_sparas2">
+        03<input type="radio" name="day2_sparas" id="day2_sparas3">
+    </td>
+    <td><input type="text" id="day2_notes"></td>
+    <td><button id="day2" onclick="markDone(2)">Done</button></td>
+</tr>
+<tr>
+    <td>o3</td>
+    <td>21-feb-26</td>
+    <td><input type="checkbox" id="day3_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day3_fajar">
+        Zohar<input type="checkbox" id="day3_zohar">
+        Asr<input type="checkbox" id="day3_asr">
+        Maghrib<input type="checkbox" id="day3_maghrib">
+        Isha<input type="checkbox" id="day3_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day3_sparas" id="day3_sparas1">
+        02<input type="radio" name="day3_sparas" id="day3_sparas2">
+        03<input type="radio" name="day3_sparas" id="day3_sparas3">
+    </td>
+    <td><input type="text" id="day3_notes"></td>
+    <td><button id="day3" onclick="markDone(3)">Done</button></td>
+</tr>
+<tr>
+    <td>o4</td>
+    <td>22-feb-26</td>
+    <td><input type="checkbox" id="day4_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day4_fajar">
+        Zohar<input type="checkbox" id="day4_zohar">
+        Asr<input type="checkbox" id="day4_asr">
+        Maghrib<input type="checkbox" id="day4_maghrib">
+        Isha<input type="checkbox" id="day4_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day4_sparas" id="day4_sparas1">
+        02<input type="radio" name="day4_sparas" id="day4_sparas2">
+        03<input type="radio" name="day4_sparas" id="day4_sparas3">
+    </td>
+    <td><input type="text" id="day4_notes"></td>
+    <td><button id="day4" onclick="markDone(4)">Done</button></td>
+</tr>
+<tr>
+    <td>05</td>
+    <td>23-feb-26</td>
+    <td><input type="checkbox" id="day5_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day5_fajar">
+        Zohar<input type="checkbox" id="day5_zohar">
+        Asr<input type="checkbox" id="day5_asr">
+        Maghrib<input type="checkbox" id="day5_maghrib">
+        Isha<input type="checkbox" id="day5_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day5_sparas" id="day5_sparas1">
+        02<input type="radio" name="day5_sparas" id="day5_sparas2">
+        03<input type="radio" name="day5_sparas" id="day5_sparas3">
+    </td>
+    <td><input type="text" id="day5_notes"></td>
+    <td><button id="day5" onclick="markDone(5)">Done</button></td>
+</tr>
+    <tr>
+        <tr>
+    <td>o6</td>
+    <td>24-feb-26</td>
+    <td><input type="checkbox" id="day6_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day6_fajar">
+        Zohar<input type="checkbox" id="day6_zohar">
+        Asr<input type="checkbox" id="day6_asr">
+        Maghrib<input type="checkbox" id="day6_maghrib">
+        Isha<input type="checkbox" id="day6_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day6_sparas" id="day6_sparas1">
+        02<input type="radio" name="day6_sparas" id="day6_sparas2">
+        03<input type="radio" name="day6_sparas" id="day6_sparas3">
+    </td>
+    <td><input type="text" id="day6_notes"></td>
+    <td><button id="day6" onclick="markDone(6)">Done</button></td>
+</tr>
+    <td>o7</td>
+    <td>25-feb-26</td>
+    <td><input type="checkbox" id="day7_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day7_fajar">
+        Zohar<input type="checkbox" id="day7_zohar">
+        Asr<input type="checkbox" id="day7_asr">
+        Maghrib<input type="checkbox" id="day7_maghrib">
+        Isha<input type="checkbox" id="day7_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day7_sparas" id="day7_sparas1">
+        02<input type="radio" name="day7_sparas" id="day7_sparas2">
+        03<input type="radio" name="day7_sparas" id="day7_sparas3">
+    </td>
+    <td><input type="text" id="day7_notes"></td>
+    <td><button id="day7" onclick="markDone(7)">Done</button></td>
+</tr>
+<tr>
+    <td>o8</td>
+    <td>26-feb-26</td>
+    <td><input type="checkbox" id="day8_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day8_fajar">
+        Zohar<input type="checkbox" id="day8_zohar">
+        Asr<input type="checkbox" id="day8_asr">
+        Maghrib<input type="checkbox" id="day8_maghrib">
+        Isha<input type="checkbox" id="day8_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day8_sparas" id="day8_sparas1">
+        02<input type="radio" name="day8_sparas" id="day8_sparas2">
+        03<input type="radio" name="day8_sparas" id="day8_sparas3">
+    </td>
+    <td><input type="text" id="day8_notes"></td>
+    <td><button id="day8" onclick="markDone(8)">Done</button></td>
+</tr>
+<tr>
+    <td>o9</td>
+    <td>27-feb-26</td>
+    <td><input type="checkbox" id="day9_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day9_fajar">
+        Zohar<input type="checkbox" id="day9_zohar">
+        Asr<input type="checkbox" id="day9_asr">
+        Maghrib<input type="checkbox" id="day9_maghrib">
+        Isha<input type="checkbox" id="day9_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day9_sparas" id="day9_sparas1">
+        02<input type="radio" name="day9_sparas" id="day9_sparas2">
+        03<input type="radio" name="day9_sparas" id="day9_sparas3">
+    </td>
+    <td><input type="text" id="day9_notes"></td>
+    <td><button id="day9" onclick="markDone(9)">Done</button></td>
+</tr>
+<tr>
+    <td>10</td>
+    <td>28-feb-26</td>
+    <td><input type="checkbox" id="day10_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day10_fajar">
+        Zohar<input type="checkbox" id="day10_zohar">
+        Asr<input type="checkbox" id="day10_asr">
+        Maghrib<input type="checkbox" id="day10_maghrib">
+        Isha<input type="checkbox" id="day10_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day10_sparas" id="day10_sparas1">
+        02<input type="radio" name="day10_sparas" id="day10_sparas2">
+        03<input type="radio" name="day10_sparas" id="day10_sparas3">
+    </td>
+    <td><input type="text" id="day10_notes"></td>
+    <td><button id="day10" onclick="markDone(10)">Done</button></td>
+</tr>
+<tr>
+    <td>11</td>
+    <td>29-feb-26</td>
+    <td><input type="checkbox" id="day11_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day11_fajar">
+        Zohar<input type="checkbox" id="day11_zohar">
+        Asr<input type="checkbox" id="day11_asr">
+        Maghrib<input type="checkbox" id="day11_maghrib">
+        Isha<input type="checkbox" id="day11_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day11_sparas" id="day11_sparas1">
+        02<input type="radio" name="day11_sparas" id="day11_sparas2">
+        03<input type="radio" name="day11_sparas" id="day11_sparas3">
+    </td>
+    <td><input type="text" id="day11_notes"></td>
+    <td><button id="day11" onclick="markDone(11)">Done</button></td>
+</tr>
+<tr>
+    <td>12</td>
+    <td>01-march-26</td>
+    <td><input type="checkbox" id="day12_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day12_fajar">
+        Zohar<input type="checkbox" id="day12_zohar">
+        Asr<input type="checkbox" id="day12_asr">
+        Maghrib<input type="checkbox" id="day12_maghrib">
+        Isha<input type="checkbox" id="day12_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day12_sparas" id="day12_sparas1">
+        02<input type="radio" name="day12_sparas" id="day12_sparas2">
+        03<input type="radio" name="day12_sparas" id="day12_sparas3">
+    </td>
+    <td><input type="text" id="day12_notes"></td>
+    <td><button id="day12" onclick="markDone(12)">Done</button></td>
+</tr>
+<tr>
+    <td>13</td>
+    <td>02-march-26</td>
+    <td><input type="checkbox" id="day13_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day13_fajar">
+        Zohar<input type="checkbox" id="day13_zohar">
+        Asr<input type="checkbox" id="day13_asr">
+        Maghrib<input type="checkbox" id="day13_maghrib">
+        Isha<input type="checkbox" id="day13_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day13_sparas" id="day13_sparas1">
+        02<input type="radio" name="day13_sparas" id="day13_sparas2">
+        03<input type="radio" name="day13_sparas" id="day13_sparas3">
+    </td>
+    <td><input type="text" id="day13_notes"></td>
+    <td><button id="day13" onclick="markDone(13)">Done</button></td>
+</tr>
+<tr>
+    <td>14</td>
+    <td>03-march-26</td>
+    <td><input type="checkbox" id="day14_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day14_fajar">
+        Zohar<input type="checkbox" id="day14_zohar">
+        Asr<input type="checkbox" id="day14_asr">
+        Maghrib<input type="checkbox" id="day14_maghrib">
+        Isha<input type="checkbox" id="day14_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day14_sparas" id="day14_sparas1">
+        02<input type="radio" name="day14_sparas" id="day14_sparas2">
+        03<input type="radio" name="day14_sparas" id="day14_sparas3">
+    </td>
+    <td><input type="text" id="day14_notes"></td>
+    <td><button id="day14" onclick="markDone(14)">Done</button></td>
+</tr>
+<tr>
+    <td>15</td>
+    <td>04-march-26</td>
+    <td><input type="checkbox" id="day15_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day15_fajar">
+        Zohar<input type="checkbox" id="day15_zohar">
+        Asr<input type="checkbox" id="day15_asr">
+        Maghrib<input type="checkbox" id="day15_maghrib">
+        Isha<input type="checkbox" id="day15_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day15_sparas" id="day15_sparas1">
+        02<input type="radio" name="day15_sparas" id="day15_sparas2">
+        03<input type="radio" name="day15_sparas" id="day15_sparas3">
+    </td>
+    <td><input type="text" id="day15_notes"></td>
+    <td><button id="day15" onclick="markDone(15)">Done</button></td>
+</tr>
+<tr>
+    <td>16</td>
+    <td>05-march-26</td>
+    <td><input type="checkbox" id="day16_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day16_fajar">
+        Zohar<input type="checkbox" id="day16_zohar">
+        Asr<input type="checkbox" id="day16_asr">
+        Maghrib<input type="checkbox" id="day16_maghrib">
+        Isha<input type="checkbox" id="day16_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day16_sparas" id="day16_sparas1">
+        02<input type="radio" name="day16_sparas" id="day16_sparas2">
+        03<input type="radio" name="day16_sparas" id="day16_sparas3">
+    </td>
+    <td><input type="text" id="day16_notes"></td>
+    <td><button id="day16" onclick="markDone(16)">Done</button></td>
+</tr>
+<tr>
+    <td>17</td>
+    <td>06-march-26</td>
+    <td><input type="checkbox" id="day17_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day17_fajar">
+        Zohar<input type="checkbox" id="day17_zohar">
+        Asr<input type="checkbox" id="day17_asr">
+        Maghrib<input type="checkbox" id="day17_maghrib">
+        Isha<input type="checkbox" id="day17_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day17_sparas" id="day17_sparas1">
+        02<input type="radio" name="day17_sparas" id="day17_sparas2">
+        03<input type="radio" name="day17_sparas" id="day17_sparas3">
+    </td>
+    <td><input type="text" id="day17_notes"></td>
+    <td><button id="day17" onclick="markDone(17)">Done</button></td>
+</tr>
+<tr>
+    <td>18</td>
+    <td>07-march-26</td>
+    <td><input type="checkbox" id="day18_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day18_fajar">
+        Zohar<input type="checkbox" id="day18_zohar">
+        Asr<input type="checkbox" id="day18_asr">
+        Maghrib<input type="checkbox" id="day18_maghrib">
+        Isha<input type="checkbox" id="day18_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day18_sparas" id="day18_sparas1">
+        02<input type="radio" name="day18_sparas" id="day18_sparas2">
+        03<input type="radio" name="day18_sparas" id="day18_sparas3">
+    </td>
+    <td><input type="text" id="day18_notes"></td>
+    <td><button id="day18" onclick="markDone(18)">Done</button></td>
+</tr>
+<tr>
+    <td>19</td>
+    <td>08-march-26</td>
+    <td><input type="checkbox" id="day19_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day19_fajar">
+        Zohar<input type="checkbox" id="day19_zohar">
+        Asr<input type="checkbox" id="day19_asr">
+        Maghrib<input type="checkbox" id="day19_maghrib">
+        Isha<input type="checkbox" id="day19_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day19_sparas" id="day19_sparas1">
+        02<input type="radio" name="day19_sparas" id="day19_sparas2">
+        03<input type="radio" name="day19_sparas" id="day19_sparas3">
+    </td>
+    <td><input type="text" id="day19_notes"></td>
+    <td><button id="day19" onclick="markDone(19)">Done</button></td>
+</tr>
+<tr>
+    <td>20</td>
+    <td>09-march-26</td>
+    <td><input type="checkbox" id="day20_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day20_fajar">
+        Zohar<input type="checkbox" id="day20_zohar">
+        Asr<input type="checkbox" id="day20_asr">
+        Maghrib<input type="checkbox" id="day20_maghrib">
+        Isha<input type="checkbox" id="day20_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day20_sparas" id="day20_sparas1">
+        02<input type="radio" name="day20_sparas" id="day20_sparas2">
+        03<input type="radio" name="day20_sparas" id="day20_sparas3">
+    </td>
+    <td><input type="text" id="day20_notes"></td>
+    <td><button id="day20" onclick="markDone(20)">Done</button></td>
+</tr>
+<tr>
+    <td>21</td>
+    <td>10-march-26</td>
+    <td><input type="checkbox" id="day21_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day21_fajar">
+        Zohar<input type="checkbox" id="day21_zohar">
+        Asr<input type="checkbox" id="day21_asr">
+        Maghrib<input type="checkbox" id="day21_maghrib">
+        Isha<input type="checkbox" id="day21_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day21_sparas" id="day21_sparas1">
+        02<input type="radio" name="day21_sparas" id="day21_sparas2">
+        03<input type="radio" name="day21_sparas" id="day21_sparas3">
+    </td>
+    <td><input type="text" id="day21_notes"></td>
+    <td><button id="day21" onclick="markDone(21)">Done</button></td>
+</tr>
+<tr>
+    <td>22</td>
+    <td>11-march-26</td>
+    <td><input type="checkbox" id="day22_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day22_fajar">
+        Zohar<input type="checkbox" id="day22_zohar">
+        Asr<input type="checkbox" id="day22_asr">
+        Maghrib<input type="checkbox" id="day22_maghrib">
+        Isha<input type="checkbox" id="day22_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day22_sparas" id="day22_sparas1">
+        02<input type="radio" name="day22_sparas" id="day22_sparas2">
+        03<input type="radio" name="day22_sparas" id="day22_sparas3">
+    </td>
+    <td><input type="text" id="day22_notes"></td>
+    <td><button id="day22" onclick="markDone(22)">Done</button></td>
+</tr>
+<tr>
+    <td>23</td>
+    <td>12-march-26</td>
+    <td><input type="checkbox" id="day23_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day23_fajar">
+        Zohar<input type="checkbox" id="day23_zohar">
+        Asr<input type="checkbox" id="day23_asr">
+        Maghrib<input type="checkbox" id="day23_maghrib">
+        Isha<input type="checkbox" id="day23_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day23_sparas" id="day23_sparas1">
+        02<input type="radio" name="day23_sparas" id="day23_sparas2">
+        03<input type="radio" name="day23_sparas" id="day23_sparas3">
+    </td>
+    <td><input type="text" id="day23_notes"></td>
+    <td><button id="day23" onclick="markDone(23)">Done</button></td>
+</tr>
+    <tr>
+    <td>24</td>
+    <td>13-march-26</td>
+    <td><input type="checkbox" id="day24_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day24_fajar">
+        Zohar<input type="checkbox" id="day24_zohar">
+        Asr<input type="checkbox" id="day24_asr">
+        Maghrib<input type="checkbox" id="day24_maghrib">
+        Isha<input type="checkbox" id="day24_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day24_sparas" id="day24_sparas1">
+        02<input type="radio" name="day24_sparas" id="day24_sparas2">
+        03<input type="radio" name="day24_sparas" id="day24_sparas3">
+    </td>
+    <td><input type="text" id="day24_notes"></td>
+    <td><button id="day24" onclick="markDone(24)">Done</button></td>
+</tr>
+<tr>
+    <td>25</td>
+    <td>14-march-26</td>
+    <td><input type="checkbox" id="day25_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day25_fajar">
+        Zohar<input type="checkbox" id="day25_zohar">
+        Asr<input type="checkbox" id="day25_asr">
+        Maghrib<input type="checkbox" id="day25_maghrib">
+        Isha<input type="checkbox" id="day25_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day25_sparas" id="day25_sparas1">
+        02<input type="radio" name="day25_sparas" id="day25_sparas2">
+        03<input type="radio" name="day25_sparas" id="day25_sparas3">
+    </td>
+    <td><input type="text" id="day25_notes"></td>
+    <td><button id="day25" onclick="markDone(25)">Done</button></td>
+</tr>
+<tr>
+    <td>26</td>
+    <td>15-march-26</td>
+    <td><input type="checkbox" id="day26_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day26_fajar">
+        Zohar<input type="checkbox" id="day26_zohar">
+        Asr<input type="checkbox" id="day26_asr">
+        Maghrib<input type="checkbox" id="day26_maghrib">
+        Isha<input type="checkbox" id="day26_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day26_sparas" id="day26_sparas1">
+        02<input type="radio" name="day26_sparas" id="day26_sparas2">
+        03<input type="radio" name="day26_sparas" id="day26_sparas3">
+    </td>
+    <td><input type="text" id="day26_notes"></td>
+    <td><button id="day26" onclick="markDone(26)">Done</button></td>
+</tr>
+<tr>
+    <td>27</td>
+    <td>16-march-26</td>
+    <td><input type="checkbox" id="day27_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day27_fajar">
+        Zohar<input type="checkbox" id="day27_zohar">
+        Asr<input type="checkbox" id="day27_asr">
+        Maghrib<input type="checkbox" id="day27_maghrib">
+        Isha<input type="checkbox" id="day27_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day27_sparas" id="day27_sparas1">
+        02<input type="radio" name="day27_sparas" id="day27_sparas2">
+        03<input type="radio" name="day27_sparas" id="day27_sparas3">
+    </td>
+    <td><input type="text" id="day27_notes"></td>
+    <td><button id="day27" onclick="markDone(27)">Done</button></td>
+</tr>
+<tr>
+    <td>28</td>
+    <td>17-march-26</td>
+    <td><input type="checkbox" id="day28_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day28_fajar">
+        Zohar<input type="checkbox" id="day28_zohar">
+        Asr<input type="checkbox" id="day28_asr">
+        Maghrib<input type="checkbox" id="day28_maghrib">
+        Isha<input type="checkbox" id="day28_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day28_sparas" id="day28_sparas1">
+        02<input type="radio" name="day28_sparas" id="day28_sparas2">
+        03<input type="radio" name="day28_sparas" id="day28_sparas3">
+    </td>
+    <td><input type="text" id="day28_notes"></td>
+    <td><button id="day28" onclick="markDone(28)">Done</button></td>
+</tr>
+<tr>
+    <td>29</td>
+    <td>18-march-26</td>
+    <td><input type="checkbox" id="day29_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day29_fajar">
+        Zohar<input type="checkbox" id="day29_zohar">
+        Asr<input type="checkbox" id="day29_asr">
+        Maghrib<input type="checkbox" id="day29_maghrib">
+        Isha<input type="checkbox" id="day29_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day29_sparas" id="day29_sparas1">
+        02<input type="radio" name="day29_sparas" id="day29_sparas2">
+        03<input type="radio" name="day29_sparas" id="day29_sparas3">
+    </td>
+    <td><input type="text" id="day29_notes"></td>
+    <td><button id="day29" onclick="markDone(29)">Done</button></td>
+</tr>
+<tr>
+    <td>30</td>
+    <td>19-march-26</td>
+    <td><input type="checkbox" id="day30_keptRoza"></td>
+    <td>
+        Fajar<input type="checkbox" id="day30_fajar">
+        Zohar<input type="checkbox" id="day30_zohar">
+        Asr<input type="checkbox" id="day30_asr">
+        Maghrib<input type="checkbox" id="day30_maghrib">
+        Isha<input type="checkbox" id="day30_isha">
+    </td>
+    <td>
+        01<input type="radio" name="day30_sparas" id="day30_sparas1">
+        02<input type="radio" name="day30_sparas" id="day30_sparas2">
+        03<input type="radio" name="day30_sparas" id="day30_sparas3">
+    </td>
+    <td><input type="text" id="day30_notes"></td>
+    <td><button id="day30" onclick="markDone(30)">Done</button></td>
+</tr>
+</table>  
+<button id="resetBtn" onclick="resetAll()">Reset All 🔄</button>
+<script src="script.js"></script> 
+</body>
+</html>

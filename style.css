@@ -1,0 +1,34 @@
+body{
+    background-color:black;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+    background-image: url("rama.png"); /* put your image name here */
+    color: antiquewhite;
+    font-size: large;
+    font-weight: bolder;
+    font-style: initial;
+    font-display:auto;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color:gold;
+    color:rgb(96, 66, 20);
+}
+.table-head{
+    width: 1000;
+    border-collapse: separate;
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-display: initial;
+}
+
+.table-row{
+    width: 100%;
+    font-size: medium;
+}
